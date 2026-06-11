@@ -1,0 +1,53 @@
+{
+  "Logistic Regression": {
+    "roc_auc": 0.9456427793418145,
+    "pr_auc": 0.6067065013843217,
+    "f1": 0.4327904620899244,
+    "precision": 0.2851129363449692,
+    "recall": 0.8978338182993857
+  },
+  "Random Forest": {
+    "roc_auc": 0.9445103834022119,
+    "pr_auc": 0.5967398830160406,
+    "f1": 0.4662576687116564,
+    "precision": 0.3215599705665931,
+    "recall": 0.8477206595538312
+  },
+  "LightGBM (tuned)": {
+    "roc_auc": 0.9554271691509792,
+    "pr_auc": 0.6805215737109302,
+    "f1": 0.4710820895522388,
+    "precision": 0.319289573514197,
+    "recall": 0.8979954736501778
+  },
+  "best_threshold": 0.8619597989949749,
+  "cv_roc_auc": {
+    "Logistic Regression": {
+      "mean": 0.943948152175343,
+      "std": 0.001024434274726959
+    },
+    "Random Forest": {
+      "mean": 0.9415067423538226,
+      "std": 0.002064350527946014
+    },
+    "LightGBM (default)": {
+      "mean": 0.9514011881352223,
+      "std": 0.0015742808441428049
+    }
+  },
+  "best_lgbm_params": {
+    "n_estimators": 700.0,
+    "learning_rate": 0.022805507813402185,
+    "num_leaves": 36.0,
+    "max_depth": 7.0,
+    "min_child_samples": 54.0,
+    "subsample": 0.9755759431383653,
+    "colsample_bytree": 0.5886470663397413,
+    "reg_alpha": 1.9999060970731486e-06,
+    "reg_lambda": 8.791668693314812e-07,
+    "scale_pos_weight": 15.113955742206429,
+    "n_jobs": -1.0,
+    "random_state": 42.0,
+    "verbose": -1.0
+  }
+}
